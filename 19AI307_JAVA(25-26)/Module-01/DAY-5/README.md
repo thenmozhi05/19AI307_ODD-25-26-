@@ -1,75 +1,53 @@
-# Ex.No:1(D) ARRAYS
+# Ex.No:1(E) STRINGS AND MATH FUNCTION
 
 ## QUESTION:
-Write a Java program to find the index of a given element in an array
+Write a Java program to find the absolute value of a number using Math.abs().
 
 ## AIM:
-To write a Java program that reads an array of integers and finds the index of a given element within the array.
+To write a Java program that finds the absolute value of a given number using the Math.abs() method.
 
 ## ALGORITHM :
-1.Start the program and read the size of the array n.
+1.Start the program and create a Scanner object.
 
-2.Read n integer elements and store them in the array a[ ].
+2.Read a number n (can be integer or decimal) from the user.
 
-3.Read the element x whose index needs to be found.
+3.Use the built-in function Math.abs(n) to compute its absolute value.
 
-4.Traverse the array from index 0 to n-1:
+4.Display the calculated absolute value.
 
-     If a[i] == x, print the index i and terminate the program.
-
-5.If the loop finishes without a match, print "Element not found".
-
-6.End the program.	
-
-
+5.End the program.
 
 
 
 ## PROGRAM:
  ```
 /*
-Program to implement a Array concept using Java
+Program to implement a Strings and Math Function using Java
 Developed by: Mani Sri Latha M
 RegisterNumber:  212223110025
 */
 ```
 
+
 ## SOURCE CODE:
 ```
-import java.util.Scanner;
-
-public class Main {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
-        int a[] = new int[n];
-        for (int i = 0; i < n; i++) 
-        {
-        a[i] = sc.nextInt();
-        }
-        
-        int x = sc.nextInt();
-        for (int i = 0; i < n; i++) {
-            if (a[i] == x) {
-                System.out.println(i);
-                return;
-            }
-            
-        }
-        System.out.println("Element not found");
-        
+import java.util.*;
+public class demo
+{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        double n=sc.nextDouble();
+        System.out.println("Absolute value = "+Math.abs(n));
     }
 }
 ```
 
 
-
-
 ## OUTPUT:
-<img width="695" height="646" alt="image" src="https://github.com/user-attachments/assets/75b8eebe-79fd-40ad-bd4f-53d9d6d2c449" />
-
+<img width="921" height="267" alt="image" src="https://github.com/user-attachments/assets/2057bca7-e3b5-47c0-ba0f-95b977864225" />
 
 
 
 ## RESULT:
-Therefore the program successfully searches the array for the given element.
+Therefore the program successfully reads a number and calculates its absolute value.
